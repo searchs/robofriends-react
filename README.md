@@ -1,14 +1,20 @@
-# Getting Started with Create React App
+# RoboFriends app
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consumes and displays user data from external API presenting each user's name and username.  User profile image is generated via a separate API while adding search functionality.
 
-## Available Scripts
 
-In the project directory, you can run:
+### Tech Stack
+1. ReactJS (JavaScript)
+## Running the project  (assuming CI/CD is not setup - that's coming)
+To run the project, checkout the main branch, change directory into project root and run the following commands:
+```
+#Install dependencies
+npm install
 
-### `npm start`
+#Start app on local.  App runs on port 3000 by default
+npm start
+```
 
-Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
@@ -16,10 +22,9 @@ You may also see any lint errors in the console.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Deploying to Production
 
-### `npm run build`
+Run the command: ```npm run build``` to create a build for production.   
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
