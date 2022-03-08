@@ -4,15 +4,6 @@ import SearchBox from '../components/SearchBox';
 import Scroll from '../components/Scroll';
 import ErrorBoundary from '../components/ErrorBoundary';
 
-// class App extends Component {
-//   constructor() {
-//     super();
-//     this.state = {
-//       robots: [],
-//       searchField: ''
-//     };
-//   }
-
 function App() {
   const [robots, setRobots] = useState([]);
   const [searchField, setSearchField] = useState('');
@@ -20,11 +11,13 @@ function App() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then((response) => response.json())
-      .then((users) => setRobots({ robots: users }))
+      .then((users) => {
+        setRobots(users);
+      })
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, []);
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
