@@ -5052,7 +5052,7 @@
   "resolved" "https://registry.npmjs.org/gh-pages/-/gh-pages-4.0.0.tgz"
   "version" "4.0.0"
   dependencies:
-    "async" "^2.6.1"
+    "async" "^2.6.4"
     "commander" "^2.18.0"
     "email-addresses" "^3.0.1"
     "filenamify" "^4.3.0"
